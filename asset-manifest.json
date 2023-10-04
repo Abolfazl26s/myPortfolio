@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/myPortfolio/static/css/main.2a3cd153.css",
-    "main.js": "/myPortfolio/static/js/main.ba6b4a43.js",
+    "main.js": "/myPortfolio/static/js/main.b13a1a2b.js",
     "static/media/Linearicons.woff": "/myPortfolio/static/media/Linearicons.7c4a28cc409290fc67fa.woff",
     "static/media/IRANSansWeb_FaNum.woff2": "/myPortfolio/static/media/IRANSansWeb_FaNum.e2b0436903df14b8a8c2.woff2",
     "index.html": "/myPortfolio/index.html",
     "main.2a3cd153.css.map": "/myPortfolio/static/css/main.2a3cd153.css.map",
-    "main.ba6b4a43.js.map": "/myPortfolio/static/js/main.ba6b4a43.js.map"
+    "main.b13a1a2b.js.map": "/myPortfolio/static/js/main.b13a1a2b.js.map"
   },
   "entrypoints": [
     "static/css/main.2a3cd153.css",
-    "static/js/main.ba6b4a43.js"
+    "static/js/main.b13a1a2b.js"
   ]
 }
