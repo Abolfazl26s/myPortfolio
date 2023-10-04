@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CareerHistory from './../components/careerHistory/CareerHistory';
+import axios from 'axios';
 
 
 export default function InfoPage() {
+
+  const [careerHistory, setCareerHistory] =useState([])
+  // const [loading, setLoading] = useState(true);
+
+  const getAllSkill = () => {
+      axios
+        .get('https://abolfazl26s.github.io/project_data/data/db.json')
+        .then(function (response) {
+          // handle success
+          setCareerHistory(response.data.myCareerHistory);
+          // setLoading(false)
+
+        })
+      };
+      getAllSkill()
+      useEffect(()=>{
+          getAllSkill();
+      },[])
+
   return (
     <div className="content">
             
@@ -17,7 +37,7 @@ export default function InfoPage() {
             <div className="mySkills">
               <h2 className="mb-4">سوابق شغلی من</h2>
               
-              <CareerHistory/>
+              <CareerHistory careerHistory={careerHistory}/>
             </div>
           </div>
   )
